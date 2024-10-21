@@ -17,6 +17,51 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Text("Container"),
+              SizedBox(height: 12),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                                    Container(
+                    padding: EdgeInsets.all(32.0),
+                    decoration: BoxDecoration(
+                      color: Color(0xFFEBF5FF),
+                      border: Border.all(
+                        color: Colors.blue,
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.circular(6.0),
+                    ),
+                    child: Text(
+                      'Hello World!',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 16.0,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(32.0),
+                    decoration: BoxDecoration(
+                      color: Color(0xFFEBF5FF),
+                      border: Border.all(
+                        color: Colors.blue,
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.circular(6.0),
+                    ),
+                    child: Text(
+                      'Hello World!',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 16.0,
+                      ),
+                    ),
+                  ),
+                
+                ],
+              ),           
+              SizedBox(height: 100),
               Text("Row"),
               SizedBox(height: 12),
               Row(
